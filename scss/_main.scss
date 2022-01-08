@@ -1,0 +1,138 @@
+@import 'global';
+
+main.epic-turtle-squad {
+    .hero-banner-in-text {
+        position: absolute;
+        top: 225px;
+        left: 0;
+        margin: 0 auto;
+        right: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1500px;
+
+        h1 {
+            color: $darkYellow;
+        }
+        p {
+            color: $white;
+            text-transform: uppercase;
+        }
+    }
+
+    .epic-item {
+        text-align: center;
+        max-width: 100%;
+        max-height: 100%;
+
+        .epic-item-img {
+            max-height: 100%;
+            padding: 1rem;
+            img {
+                text-align: center;
+            }
+        }
+        p {
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+    }
+
+
+    .character-inner1, .character-inner2, .character-inner3, .character-inner4 {
+        filter: brightness(20%);
+        cursor: pointer;
+        transition: all .3s ease-in-out ;
+        &:hover {
+            filter: brightness(100%);
+        }
+    }
+
+    .locked-epic-bottom {
+        width: 100%;
+        .child-1 {
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            width: 100%;
+        }
+        .child-2 {
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            width: 100%;
+        }
+        ul {
+            margin: 0;
+            padding: .5rem;
+            li {
+                padding: 0rem 1rem;
+                text-align: center;
+                margin: 0;
+
+                i {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .services-nft-inner {
+        padding: 2rem;
+        text-align: center;
+
+        h5 {
+            font-weight: bold;
+            color: $darkYellow;
+            font-size: 2.3rem;
+             span {
+                 display: block;
+                 color: transparent;
+                -webkit-text-stroke: 1px $darkYellow;
+             }
+        }
+    }
+
+    .accordion-item {
+        margin: 1rem 0rem;
+        box-shadow: 0;
+        outline: 0;
+        background: transparent!important;
+        border-radius: 25px!important;
+        border: 1px solid $white;
+        border-radius: 25px!important;
+        .accordion-button {
+            color: $white;
+            background: transparent;
+
+            &::after {
+                margin-left: auto;
+                content: "";
+                background-image: url(../img/plus-circle-fill.svg);
+                background-repeat: no-repeat;
+                background-size: 1.25;
+                
+            }
+
+            &:focus {
+                box-shadow: none!important;
+                outline: 0!important;
+                border: 0!important;
+                color: none;
+            }
+
+            &:not(.collapsed) {
+                box-shadow: 0!important;
+                outline: 0;
+
+                &::after {
+                    background-image: url(../img/dash-circle-fill.svg);
+                }
+            }
+        }
+    }
+
+}
+

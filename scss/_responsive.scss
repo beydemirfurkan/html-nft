@@ -1,0 +1,15 @@
+@import 'global';
+
+
+@media(max-width:768px) {
+    p {
+        font-size: .9rem;
+    }
+}
+
+@media(min-width:991px) {
+    .epic-whatis-wrapper {
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+    }
+}
